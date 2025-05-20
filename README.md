@@ -140,7 +140,7 @@ Please follow the existing coding style and include tests if applicable.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+This project is for educational and portfolio purposes only.
 
 ---
 
