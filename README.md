@@ -17,7 +17,6 @@ Salon Management System is a web-based application designed to streamline salon 
 - [Features](#features)  
 - [Tech Stack](#tech-stack)  
 - [Contributing](#contributing)  
-- [License](#license)  
 - [Contact](#contact)  
 
 ---
@@ -28,7 +27,7 @@ Salon Management System is a web-based application designed to streamline salon 
 - Java JDK 8 or higher  
 - Apache Tomcat 9.x  
 - MySQL 5.7 or higher  
-- Maven (for dependency management)  
+- Java with Ant 
 - Git  
 
 ### Steps
@@ -110,7 +109,7 @@ mvn clean install
 - **Backend:** Java, Servlets, JDBC  
 - **Frontend:** JSP, JavaScript, HTML, CSS, Bootstrap  
 - **Database:** MySQL  
-- **Build Tool:** Maven  
+- **Build Tool:** Java with Ant
 - **Server:** Apache Tomcat  
 
 ---
