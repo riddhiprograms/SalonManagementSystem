@@ -1,7 +1,7 @@
 
 # Salon Management System
 
-[(https://github.com/riddhiprograms/SalonManagementSystem/actions/workflows/build.yml/badge.svg)](https://github.com/riddhiprograms/SalonManagementSystem/actions/workflows/build.yml)
+(https://github.com/riddhiprograms/SalonManagementSystem/actions/workflows/build.yml)
 
 [![GitHub issues](https://img.shields.io/github/issues/riddhiprograms/SalonManagementSystem)](https://github.com/riddhiprograms/SalonManagementSystem/issues)
 [![GitHub stars](https://img.shields.io/github/stars/riddhiprograms/SalonManagementSystem)](https://github.com/riddhiprograms/SalonManagementSystem/stargazers)
