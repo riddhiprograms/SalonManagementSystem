@@ -1,0 +1,137 @@
+/**
+ * Profile Page Styles for Radiant Locks Hair & Beauty
+ */
+
+/* Avatar styles */
+.avatar-circle {
+  width: 80px;
+  height: 80px;
+  background-color: var(--bs-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.avatar-initials {
+  text-transform: uppercase;
+}
+
+/* Profile navigation */
+.profile-nav .list-group-item {
+  border-left: 3px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.profile-nav .list-group-item.active {
+  border-left: 3px solid var(--bs-primary);
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+  color: var(--bs-primary);
+  font-weight: 500;
+}
+
+.profile-nav .list-group-item:hover:not(.active) {
+  border-left: 3px solid rgba(var(--bs-primary-rgb), 0.4);
+  background-color: rgba(var(--bs-primary-rgb), 0.05);
+}
+
+/* Password strength indicator */
+.password-strength {
+  margin-top: 5px;
+}
+
+.password-strength .progress {
+  height: 5px;
+  margin-bottom: 5px;
+}
+
+/* Appointment cards */
+.appointment-card .badge {
+  font-size: 80%;
+}
+
+.appointment-card .card {
+  transition: all 0.2s ease;
+  border-left: 4px solid #dee2e6;
+}
+
+.appointment-card .card:hover {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.appointment-card .badge.bg-primary + h5 {
+  color: var(--bs-primary);
+}
+
+.appointment-card .badge.bg-success + h5 {
+  color: var(--bs-success);
+}
+
+.appointment-card .badge.bg-secondary + h5 {
+  color: var(--bs-secondary);
+}
+
+.appointment-card .badge.bg-danger + h5 {
+  color: var(--bs-danger);
+}
+
+/* Tabs content animation */
+.tab-pane {
+  opacity: 0;
+  transition: opacity 0.15s linear;
+}
+
+.tab-pane.show {
+  opacity: 1;
+}
+
+/* Form styles */
+.form-control:focus,
+.form-select:focus {
+  border-color: rgba(var(--bs-primary-rgb), 0.4);
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+/* Custom toggle button styles */
+.toggle-password {
+  color: #6c757d;
+}
+
+.toggle-password:hover {
+  color: var(--bs-primary);
+}
+
+/* Media queries for responsive design */
+@media (max-width: 767.98px) {
+  .avatar-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+  }
+  
+  .profile-nav {
+    margin-bottom: 2rem;
+  }
+  
+  .appointment-card .card-body {
+    padding: 1rem;
+  }
+}
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust for custom blur effect */
+}
+/* Enhanced animations for modals */
+.modal.fade .modal-dialog {
+  transform: translateY(-20%);
+  opacity: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translateY(0);
+  opacity: 1;
+}

@@ -1,0 +1,406 @@
+/* Main Styles for Radiant Locks Hair & Beauty Website */
+
+/* ===== Global Styles ===== */
+:root {
+    --primary-color: #D4AF37;
+    --primary-light: #F2E3A3;
+    --primary-dark: #A38829;
+    --secondary-color: #2C3E50;
+    --background-color: #FFFFFF;
+    --text-color: #333333;
+    --accent-color: #E74C3C;
+    --light-gray: #F8F9FA;
+    --med-gray: #E9ECEF;
+    --dark-gray: #6C757D;
+    --success-color: #28A745;
+    --danger-color: #DC3545;
+    --warning-color: #FFC107;
+    --info-color: #17A2B8;
+    --border-radius: 0.25rem;
+    --transition-speed: 0.3s;
+    --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --spacing: 24px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.playfair-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Custom colors */
+.bg-primary,
+.btn-primary {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+}
+
+.btn-outline-primary {
+    color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+/* ===== Header/Navbar ===== */
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar-brand {
+    text-decoration: none;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.brand-subtitle {
+    font-size: 0.8rem;
+    color: var(--dark-gray);
+}
+
+.salon-logo {
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin: 0 0.5rem;
+    position: relative;
+    transition: color var(--transition-speed);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    left: 0;
+    bottom: -2px;
+    transition: width var(--transition-speed);
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.booking-btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1562322140-8baeececf3df');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7));
+}
+
+/* ===== Sections ===== */
+section {
+    padding: var(--spacing) 0;
+}
+
+.section-title {
+    margin-bottom: var(--spacing);
+    text-align: center;
+}
+
+/* ===== Services Section ===== */
+.service-card {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    background-color: white;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+}
+
+.service-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-category {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: var(--primary-light);
+    color: var(--primary-dark);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.service-price {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.service-duration {
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+}
+
+/* ===== Staff Section ===== */
+.staff-card {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    position: relative;
+    text-align: center;
+    height: 100%;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow);
+}
+
+.staff-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--primary-color);
+    margin: 0 auto 1rem;
+}
+
+.staff-role {
+    font-size: 0.9rem;
+    color: var(--primary-dark);
+    font-weight: 600;
+}
+
+.staff-bio {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.staff-specialties {
+    font-size: 0.8rem;
+    color: var(--dark-gray);
+}
+
+/* ===== Booking Process ===== */
+.booking-card {
+    border: none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.steps-list .step-item {
+    opacity: 0.5;
+    transition: opacity var(--transition-speed);
+}
+
+.steps-list .step-item.active {
+    opacity: 1;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    font-weight: 600;
+}
+
+.time-slot {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--med-gray);
+    border-radius: var(--border-radius);
+    margin: 0.25rem;
+    cursor: pointer;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.time-slot:hover {
+    background-color: var(--primary-light);
+    border-color: var(--primary-color);
+}
+
+.time-slot.selected {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.time-slot.unavailable {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: var(--med-gray);
+}
+
+/* ===== Contact Section ===== */
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.social-links a {
+    transition: transform var(--transition-speed), color var(--transition-speed);
+    display: inline-block;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    color: var(--primary-dark) !important;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+footer .list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+footer .text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 767.98px) {
+    .hero-section {
+        min-height: 60vh;
+    }
+
+    .booking-btn {
+        margin-top: 0.5rem;
+    }
+
+    .service-card .card-img-top {
+        height: 160px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-section {
+        min-height: 50vh;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+}
+
+/* ===== Utilities ===== */
+.border-primary {
+    border-color: var(--primary-color) !important;
+}
+
+.rounded-custom {
+    border-radius: 1rem;
+}
+.form-check {
+    margin-bottom: 0.5rem;
+}
+
+.form-check-input:hover {
+    border-color: #007bff;
+}
+
+.form-check-label:hover {
+    text-decoration: underline;
+}
+.social-links a:hover {
+    color: #007bff;
+}
+.card {
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card-title {
+    font-size: 1.2rem;
+    color: #343a40;
+}
+.card-text {
+    color: #6c757d;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
