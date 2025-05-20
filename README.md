@@ -1,8 +1,8 @@
 
 # Salon Management System
 
-[![Build Status](https://github.com/riddhiprograms/SalonManagementSystem/actions/workflows/build.yml/badge.svg)](https://github.com/riddhiprograms/SalonManagementSystem/actions/workflows/build.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[(https://github.com/riddhiprograms/SalonManagementSystem/actions/workflows/build.yml/badge.svg)](https://github.com/riddhiprograms/SalonManagementSystem/actions/workflows/build.yml)
+
 [![GitHub issues](https://img.shields.io/github/issues/riddhiprograms/SalonManagementSystem)](https://github.com/riddhiprograms/SalonManagementSystem/issues)
 [![GitHub stars](https://img.shields.io/github/stars/riddhiprograms/SalonManagementSystem)](https://github.com/riddhiprograms/SalonManagementSystem/stargazers)
 
